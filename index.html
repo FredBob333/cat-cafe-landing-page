@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img src="https://branition.com/assets/img/users/logos/11551-ZOsVUPH.webp" 
+                alt="logo" 
+                id="header-img"
+                width="60">
+                <span class="the-product">Meow & Brew</span>
+            </div>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#menu">Menu</a></li>
+                <li><a class="nav-link" href="#adopt-a-cat">Adopt a Cat</a></li>
+            </ul>
+            </nav>
+    </header>
+
+    <section id="home">
+        <h2>Join our newsletter for cat café updates!</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input 
+        type="email" 
+        required placeholder="Enter your email address" 
+        name="email" 
+        id="email"
+        />
+        <input type="submit" id="submit" value="GET STARTED"
+        />
+    </form>
+    </section>
+    
+    <section id="menu">
+        <div class="feature">
+            <i class="ri-cup-fill ri-4x icon"></i>
+            <div>
+                <h2>Artisan Coffee</h2>
+                <p>Ethically sourced beans, we brew to perfection</p>
+                </div>
+            </div>
+         <div class="feature">
+            <i class="ri-heart-fill ri-4x icon"></i>
+            <div>
+                <h2>Adoptable Friends</h2>
+                <p>Find your new best friend at our café</p>
+            </div>
+         </div>
+        <div class="feature">
+            <i class="ri-calendar-event-fill ri-4x icon"></i>
+            <div>
+                <h2>Events</h2>
+                <p>Join cat yoga, latte art classes & more!</p>
+        </div>
+    </section>
+    <section id="audio">
+    <iframe
+    id="video"
+    height="400" 
+    src="https://www.youtube.com/embed/wbQztZx64F8?si=JYYJUF_qFSmFdDEn" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="adopt-a-cat">
+        <h2>Visit Our Café</h2>
+        <div class="pricing-cards">
+           <div class="card">
+            <h3>Paw Pass</h3>
+            <p class="price">$12</p>
+            <ul>
+                <li>1-hour visit</li>
+                <li>1 artisan drink</li>
+                <li>play with cats</li>
+            </ul>
+            <button class="btn">Book Now</button>
+           </div> 
+           <div class="card">
+            <h3>VIP Pass</h3>
+            <p class="price">$25</p>
+            <ul>
+                <li>2-hour visit</li>
+                <li>2 premium drinks</li>
+                <li>Cat treats included</li>
+                <li>Priority seating</li>
+            </ul>
+            <button class="btn">Reserve</button>
+           </div>
+
+           <div class="card">
+            <h3>Rescue Hero</h3>
+            <p class="price">$50</p>
+            <ul>
+                <li>All-day access</li>
+                <li>3 drinks + snacks</li>
+                <li>20$ donation to shelters</li>
+                <li>Adoption application support</li>
+            </ul>
+            <button class="btn">Donate & Visit</button>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

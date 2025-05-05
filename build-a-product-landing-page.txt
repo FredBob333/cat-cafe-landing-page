@@ -1,0 +1,365 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img src="https://branition.com/assets/img/users/logos/11551-ZOsVUPH.webp" 
+                alt="logo" 
+                id="header-img"
+                width="60">
+                <span class="the-product">Meow & Brew</span>
+            </div>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#menu">Menu</a></li>
+                <li><a class="nav-link" href="#adopt-a-cat">Adopt a Cat</a></li>
+            </ul>
+            </nav>
+    </header>
+
+    <section id="home">
+        <h2>Join our newsletter for cat café updates!</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input 
+        type="email" 
+        required placeholder="Enter your email address" 
+        name="email" 
+        id="email"
+        />
+        <input type="submit" id="submit" value="GET STARTED"
+        />
+    </form>
+    </section>
+    
+    <section id="menu">
+        <div class="feature">
+            <i class="ri-cup-fill ri-4x icon"></i>
+            <div>
+                <h2>Artisan Coffee</h2>
+                <p>Ethically sourced beans, we brew to perfection</p>
+                </div>
+            </div>
+         <div class="feature">
+            <i class="ri-heart-fill ri-4x icon"></i>
+            <div>
+                <h2>Adoptable Friends</h2>
+                <p>Find your new best friend at our café</p>
+            </div>
+         </div>
+        <div class="feature">
+            <i class="ri-calendar-event-fill ri-4x icon"></i>
+            <div>
+                <h2>Events</h2>
+                <p>Join cat yoga, latte art classes & more!</p>
+        </div>
+    </section>
+    <section id="audio">
+    <iframe
+    id="video"
+    height="400" 
+    src="https://www.youtube.com/embed/wbQztZx64F8?si=JYYJUF_qFSmFdDEn" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="adopt-a-cat">
+        <h2>Visit Our Café</h2>
+        <div class="pricing-cards">
+           <div class="card">
+            <h3>Paw Pass</h3>
+            <p class="price">$12</p>
+            <ul>
+                <li>1-hour visit</li>
+                <li>1 artisan drink</li>
+                <li>play with cats</li>
+            </ul>
+            <button class="btn">Book Now</button>
+           </div> 
+           <div class="card">
+            <h3>VIP Pass</h3>
+            <p class="price">$25</p>
+            <ul>
+                <li>2-hour visit</li>
+                <li>2 premium drinks</li>
+                <li>Cat treats included</li>
+                <li>Priority seating</li>
+            </ul>
+            <button class="btn">Reserve</button>
+           </div>
+
+           <div class="card">
+            <h3>Rescue Hero</h3>
+            <p class="price">$50</p>
+            <ul>
+                <li>All-day access</li>
+                <li>3 drinks + snacks</li>
+                <li>20$ donation to shelters</li>
+                <li>Adoption application support</li>
+            </ul>
+            <button class="btn">Donate & Visit</button>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --text: hsl(228, 12%, 48%);
+    --pale: hsl(32, 37%, 92%);
+    --brown: hsl(42, 21%, 52%);
+    --coffee: hsl(42, 30%, 36%); 
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+body {
+    background-color: var(--pale);
+}
+
+#header-img {
+    width: 60px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+#home {
+    padding-top: 80px;
+    margin-top: 0;
+}
+
+#home h2 {
+    margin-top: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.the-product {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+
+#email-section {
+    margin-top: 100px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--brown);
+}
+
+#submit {
+    background-color: var(--brown);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+section::before {
+    display: block;
+    content: '';
+    margin-top: -80px;
+    height: 80px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: "fraunces";
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: var(--coffee);
+    margin-right: 30px;
+}
+
+#menu {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px;
+    font-family: "montserrat";
+}
+
+#video {
+    width: 100%;
+}
+
+#adopt-a-cat {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--pale);
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+.card.highlight {
+    transform: scale(1.05);
+    border: 2px solid var(--coffee);
+}
+
+.price {
+    font-family: 'fraunces';
+    font-size: 2rem;
+    color: var(--coffee);
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.card li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.card li::before {
+    content: '🐾';
+    position: absolute;
+    left: 0;
+}
+
+.btn {
+    background: var(--brown);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'montserrat';
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--coffee);
+}
+
+#submit:hover {
+    background: var(--coffee);
+}
+
+@media only screen and (min-width: 600px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (width >= 100px) {
+    #video {
+        width: 70%;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+** end of undefined **
+
